@@ -1,0 +1,8 @@
+{
+  "name": "AI FAQ Assistant",
+  "description": "Intelligent Apple-inspired FAQ & knowledge-base platform with verified AI answers, source transparency, voice search, and admin management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

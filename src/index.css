@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --apple-bg: #FFFFFF;
+    --apple-bg-secondary: #F5F5F7;
+    --apple-card: #FFFFFF;
+    --apple-text-primary: #1D1D1F;
+    --apple-text-secondary: #6E6E73;
+    --apple-border: #D2D2D7;
+    --apple-accent: #007AFF;
+    --apple-success: #34C759;
+    --apple-warning: #FF9500;
+    --apple-error: #FF3B30;
+  }
+
+  .dark {
+    --apple-bg: #000000;
+    --apple-bg-secondary: #1C1C1E;
+    --apple-card: #2C2C2E;
+    --apple-text-primary: #F5F5F7;
+    --apple-text-secondary: #98989D;
+    --apple-border: #38383A;
+    --apple-accent: #0A84FF;
+    --apple-success: #32D74B;
+    --apple-warning: #FF9F0A;
+    --apple-error: #FF453A;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Plus Jakarta Sans", system-ui, sans-serif;
+    background-color: var(--apple-bg);
+    color: var(--apple-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Apple-style smooth glass effect */
+.apple-glass {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.dark .apple-glass {
+  background: rgba(28, 28, 30, 0.82);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* Subtle Apple depth card */
+.apple-card {
+  background-color: var(--apple-card);
+  border: 1px solid var(--apple-border);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+}
+
+.dark .apple-card {
+  box-shadow: 0 4px 24px -2px rgba(0, 0, 0, 0.35);
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
